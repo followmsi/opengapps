@@ -156,7 +156,7 @@ setupwizard_lib_filename="libbarhopper.so";
 
 # Buffer of extra system space to require for GApps install (9216=9MB)
 # This will allow for some ROM size expansion when GApps are restored
-buffer_size_kb=9216; small_buffer_size=2048;
+buffer_size_kb=2048; small_buffer_size=2048;
 
 # List of GApps files that should NOT be automatically removed as they are also included in (many) ROMs
 removal_bypass_list="'"$REMOVALBYPASS"'
