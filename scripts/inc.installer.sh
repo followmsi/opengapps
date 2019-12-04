@@ -1016,7 +1016,7 @@ ui_print " ";
 #                                                  Mount partitions
 
 mounts=""
-for p in "/cache" "/data" "/persist" "/vendor"; do
+for p in "/system" "/cache" "/data" "/persist" "/vendor"; do
   if [ -d "$p" ] && grep -q "$p" "/etc/fstab" && ! mountpoint -q "$p"; then
     if [ -z "$mounts" ]; then
       mounts="$p"
